@@ -9,7 +9,7 @@ const App = () => {
       <div className="max-w-7xl w-full">
         <Router>
           <Routes>
-            <Route path="/" element={<Navigate to="/form" />} />
+            <Route path="/" element={<Navigate to="/search" />} />
             <Route path="/form" element={<Signup />} />
             <Route path="/watchlist" element={<WatchList />} />
             <Route path="/search" element={<Search />} />
