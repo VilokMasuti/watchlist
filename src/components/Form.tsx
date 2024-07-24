@@ -22,7 +22,7 @@ const Form = () => {
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
 
-    navigate("/search");
+    navigate("/search"); // Navigate to the search page
   };
 
   return (
@@ -41,6 +41,7 @@ const Form = () => {
             value={email}
             placeholder="Enter your email"
             onChange={handleChange}
+            autoComplete="email" // Add autocomplete attribute
             className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none focus:ring focus:ring-opacity-40"
             required
           />
@@ -50,6 +51,7 @@ const Form = () => {
             value={password}
             placeholder="Enter your password"
             onChange={handleChange}
+            autoComplete="current-password" // Add autocomplete attribute
             className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none focus:ring focus:ring-opacity-40"
             required
           />
