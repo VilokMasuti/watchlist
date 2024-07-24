@@ -17,7 +17,7 @@ const Search = () => {
     e.preventDefault();
     setLoading(true); // Set loading to true when search starts
     try {
-      const response = await axios.get(`http://www.omdbapi.com/?s=${query}&apikey=ad84c69d`);
+      const response = await axios.get(`https://www.omdbapi.com/?s=${query}&apikey=ad84c69d`);
       setMovies(response.data.Search || []);
     } catch (error) {
       console.error('Error fetching movies:', error);
