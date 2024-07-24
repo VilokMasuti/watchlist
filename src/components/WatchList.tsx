@@ -17,7 +17,7 @@ const WatchList = () => {
       </Link>
       </button>
    
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 mt-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {watchlist.map((movie) => (
           <div key={movie.imdbID} className="p-4 border border-gray-200 rounded-md">
             <img src={movie.Poster} alt={movie.Title} className="w-full h-auto" />
